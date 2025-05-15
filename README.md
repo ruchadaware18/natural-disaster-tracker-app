@@ -63,6 +63,11 @@ To render the map, you need a Google Maps API key.
 - Events: https://eonet.gsfc.nasa.gov/api/v2.1/events
 - Categories: https://eonet.gsfc.nasa.gov/api/v2.1/categories
 
+---
+
+## 🎥 Walkthrough
+Here’s a quick demo of the app in action:
+![Wildfire Tracker Walkthrough](./public/WildfireTrackerApp.gif)
 
 ## 🤝 Contributing
 Pull requests are welcome! Feel free to fork the repo and submit a PR with improvements.
