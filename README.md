@@ -2,7 +2,7 @@
 
 A React-based interactive map that allows users to view **natural events** (like wildfires, volcanoes, floods, and more) across the globe in real-time using data from NASA's [EONET API](https://eonet.gsfc.nasa.gov/). Users can filter by event category and view detailed information for each event by clicking on its map marker.
 
-![App Screenshot](./public/WildfireTrackerApp.png) <!-- Optional: Add a real screenshot -->
+![App Screenshot](./public/NaturalDisasterTrackerApp.png) <!-- Optional: Add a real screenshot -->
 
 ---
 
@@ -67,7 +67,7 @@ To render the map, you need a Google Maps API key.
 
 ## 🎥 Walkthrough
 Here’s a quick demo of the app in action:
-![Wildfire Tracker Walkthrough](./public/WildfireTrackerApp.gif)
+![Wildfire Tracker Walkthrough](./public/NaturalDisasterTracker.gif)
 
 ## 🤝 Contributing
 Pull requests are welcome! Feel free to fork the repo and submit a PR with improvements.
