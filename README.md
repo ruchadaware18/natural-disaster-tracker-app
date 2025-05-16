@@ -1,8 +1,8 @@
 # 🌍 Natural Disaster Tracker App 
 
-A React-based interactive map that allows users to view **natural events** (like wildfires, volcanoes, floods, and more) across the globe in real-time using data from NASA's [EONET API](https://eonet.gsfc.nasa.gov/). Users can filter by event category and view detailed information for each event by clicking on its map marker.
+A React-based interactive map that allows users to view **natural events** (like wildfires, volcanoes, floods, and more) across the globe in real-time using data from NASA's [EONET API](https://eonet.gsfc.nasa.gov/). Users can filter by event category and view detailed information for each event by clicking on its map marker. The app also leverages **OpenAI’s GPT model** to generate short summaries describing each event.
 
-![App Screenshot](./public/NaturalDisasterTrackerApp.png) <!-- Optional: Add a real screenshot -->
+![App Screenshot](./public/NaturalDisasterTrackerApp.png)
 
 ---
 
@@ -11,6 +11,7 @@ A React-based interactive map that allows users to view **natural events** (like
 - 🌐 **Interactive Google Maps** with event markers
 - 🔎 **Category Filter Dropdown** to display specific types of events (e.g., Wildfires, Volcanoes, Severe Storms)
 - 🧭 **Event Info Popup** with event title, date, ID, and type
+- 🤖 **AI-Powered Event Summaries** using OpenAI GPT
 - ❌ Closeable info box for a better viewing experience
 - 🔄 Real-time event data fetched from NASA EONET API
 
@@ -19,11 +20,14 @@ A React-based interactive map that allows users to view **natural events** (like
 ## 🛠 Tech Stack
 
 - **Frontend:** React.js, CSS
+- **Backend:** Node.js, Express.js
+- **AI/LLM:** OpenAI GPT (via OpenAI Node SDK)
 - **Maps:** @react-google-maps/api
 - **Icons:** Iconify
-- **Data Source:** [NASA EONET API v2.1](https://eonet.gsfc.nasa.gov/api/v2.1/events)
+- **Data Source:** NASA EONET API v2.1
 
 ---
+
 
 ## 🚀 Getting Started
 
@@ -59,9 +63,20 @@ To render the map, you need a Google Maps API key.
 ```
 ---
 
+### OpenAI API Key
+
+To use AI summaries:
+- Create .env file in server/ folder
+- Add the following line:
+```bash
+OPENAI_API_KEY=your_openai_api_key_here
+```
+
 ## 🧪 Sample API Endpoints
 - Events: https://eonet.gsfc.nasa.gov/api/v2.1/events
 - Categories: https://eonet.gsfc.nasa.gov/api/v2.1/categories
+- Summaries: POST http://localhost:5000/generate-summary with body
+- 
 
 ---
 
@@ -76,6 +91,7 @@ Pull requests are welcome! Feel free to fork the repo and submit a PR with impro
 
 ## 🛰️ Credits
 - [NASA EONET API](https://eonet.gsfc.nasa.gov/)
+- [OpenAI](https://platform.openai.com/)
 - @react-google-maps/api
 - [Iconify](https://iconify.design/)
 
